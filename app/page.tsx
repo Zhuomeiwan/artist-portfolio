@@ -10,6 +10,8 @@ const artworksQuery = groq`
     theme,
     medium,
     story,
+    exif,
+    materials,
     "imageUrl": image.asset->url,
     "aspectRatio": image.asset->metadata.dimensions.aspectRatio
   }
